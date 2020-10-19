@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+
+  h1 {
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    line-height: 1.5;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+}
+
+.cmd {
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: #08c;
+  margin-left: 5px;
+}
+
+.container input[type="text"] {
+  padding: 2px;
+  margin-right: 5px;
+}
+
+h1 > span {
+  color: #ccc;
+  font-size: 0.75rem;
+  margin-left: 5px;
+}
+
+h1 > button {
+  float: right;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
