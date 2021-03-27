@@ -60,18 +60,27 @@ body {
 
   li {
     line-height: 1.5;
+
     margin: 0px 8px 4px 0;
     padding: 0px 20px;
     border-radius: 10px;
     border-style: none;
     outline: none;
+    // width: 80px;
+    // height: 80px;
+    // text-align: center;
     line-height: 34px;
     color: #894949;
+    // font-weight: bold;
     background-color: #fdfefc;
     font-size: 0.85rem;
     text-decoration: none;
     transition: all .3s;
   }
+
+  // span {
+  //   font-weight: bold;
+  // }
 
   input[type="checkbox"] {
     margin-right: 5px;
@@ -82,6 +91,7 @@ body {
   font-size: 0.75rem;
   cursor: pointer;
   color: #f1a9a9;
+  // font-weight: bold;
   margin-left: 5px;
 }
 
@@ -92,11 +102,15 @@ body {
 
 .container input[type="submit"] {
   padding: 2px;
+  // margin-right: 8px;
+
   margin: 0px 8px 20px 0;
   padding: 0px 20px;
   border-radius: 20px;
   border-style: none;
   outline: none;
+  // width: 80px;
+  // height: 80px;
   text-align: center;
   line-height: 34px;
   color: #fbf4f4;
@@ -109,10 +123,13 @@ body {
 
 .container input[type="submit"]:hover {
   background-color: #50693a;
+  // color: #9ab7e;
+  // font-size: 0.9rem;
 }
 
 h1>span {
   color: #b69a9a;
+  // font-weight: bold;
   font-size: 0.75rem;
   margin-left: 5px;
 }
@@ -124,9 +141,12 @@ h1>button {
   border-radius: 20px;
   border-style: none;
   outline: none;
+  // width: 80px;
+  // height: 80px;
   text-align: center;
   line-height: 34px;
   color: #fbf4f4;
+  // font-weight: bold;
   background-color: #b65151;
   font-size: 0.8rem;
   text-decoration: none;
