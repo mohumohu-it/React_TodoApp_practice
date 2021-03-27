@@ -1,16 +1,46 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
 html {
   width: 100%;
   height: 100%;
 }
 
 body {
+  animation: fadeIn 1s ease 0.2s 1 normal;
+  -webkit-animation: fadeIn 1s ease 0.2s 1 normal;
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
+}
+
+#root {
+  width: 426px;
+  margin: 8vh auto;
+  padding: 0;
+  background: #feedda;
+  border-radius: 30px;
 }
 
 .container {
@@ -18,9 +48,9 @@ body {
   margin: auto;
 
   h1 {
-    font-size: 1rem;
-    border-bottom: 1px solid #ddd;
-    padding: 16px 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #cea0a0;
+    padding: 18px 0 10px 0;
   }
 
   ul {
@@ -30,6 +60,17 @@ body {
 
   li {
     line-height: 1.5;
+    margin: 0px 8px 4px 0;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    line-height: 34px;
+    color: #894949;
+    background-color: #fdfefc;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all .3s;
   }
 
   input[type="checkbox"] {
@@ -40,23 +81,56 @@ body {
 .cmd {
   font-size: 0.75rem;
   cursor: pointer;
-  color: #08c;
+  color: #f1a9a9;
   margin-left: 5px;
 }
 
 .container input[type="text"] {
   padding: 2px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
-h1 > span {
-  color: #ccc;
+.container input[type="submit"] {
+  padding: 2px;
+  margin: 0px 8px 20px 0;
+  padding: 0px 20px;
+  border-radius: 20px;
+  border-style: none;
+  outline: none;
+  text-align: center;
+  line-height: 34px;
+  color: #fbf4f4;
+  font-weight: bold;
+  background-color: #9ab87e;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #50693a;
+}
+
+h1>span {
+  color: #b69a9a;
   font-size: 0.75rem;
   margin-left: 5px;
 }
 
-h1 > button {
+h1>button {
   float: right;
+  margin-top: 4px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  border-style: none;
+  outline: none;
+  text-align: center;
+  line-height: 34px;
+  color: #fbf4f4;
+  background-color: #b65151;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all .3s;
 }
 
 .done {
