@@ -20,8 +20,8 @@
 
         return (
           <h1>
-            <button onClick={props.purge}>削除</button>
-           My Todos
+            <button onClick={props.purge}>完了済み削除</button>
+           Todoリスト
             <span>({remaining.length}/{props.todos.length})</span>
           </h1>
         );
@@ -39,7 +39,7 @@
                 {props.todo.title}
               </span>
             </label>
-            <span className="cmd" onClick={() => props.deleteTodo(props.todo)}>[x]</span>
+            <span className="cmd" onClick={() => props.deleteTodo(props.todo)}>[削除]</span>
           </li>
         );
       }
